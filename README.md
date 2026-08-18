@@ -1,4 +1,4 @@
-# WinCleaner
+# KernClean
 
 Windows-only command-line system maintenance tool (C# / .NET 8). A scriptable,
 safety-first, German-language CLI that cleans junk, analyzes disk usage, finds
@@ -21,7 +21,7 @@ software updates, and more — without bundling, telemetry, or a resident servic
 ## Design principles
 
 - **Scriptable first** — `--json` output, exit codes, stderr-only diagnostics,
-  and Task Scheduler integration make WinCleaner a building block for admin
+  and Task Scheduler integration make KernClean a building block for admin
   automation, where the GUI suites are click-only.
 - **Safety first** — destructive commands default to a **dry run**; real action
   needs `--no-dry-run` plus a confirmation (or `--yes`). Deletions go to the

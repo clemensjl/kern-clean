@@ -23,7 +23,7 @@ public sealed class HelpCommand : ICommand
     /// <summary>Vollständige Befehlsübersicht.</summary>
     public static void Print()
     {
-        Console.WriteLine("WinCleaner (CLI)\n");
+        Console.WriteLine("KernClean (CLI)\n");
         Console.WriteLine("Befehle:");
 
         var rows = CommandRegistry.All

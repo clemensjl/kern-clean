@@ -1,6 +1,6 @@
-# WinCleaner — Anleitung (Deutsch)
+# KernClean — Anleitung (Deutsch)
 
-WinCleaner ist ein Kommandozeilen-Werkzeug für Windows, das deinen PC aufräumt
+KernClean ist ein Kommandozeilen-Werkzeug für Windows, das deinen PC aufräumt
 und wartet: Datenmüll löschen, Speicherfresser finden, doppelte Dateien
 aufspüren, Autostart entschlacken, Bloatware entfernen, Privatsphäre-
 Einstellungen setzen und Software aktuell halten — alles ohne Werbung,
@@ -8,7 +8,7 @@ Telemetrie oder Hintergrunddienst.
 
 ## Starten
 
-WinCleaner ist unter `%LOCALAPPDATA%\Programs\WinCleaner` installiert und im
+KernClean ist unter `%LOCALAPPDATA%\Programs\WinCleaner` installiert und im
 PATH eingetragen. Öffne ein **Terminal** (Windows-Taste → „Terminal" oder
 „PowerShell") und tippe:
 
@@ -53,11 +53,11 @@ im Installationsordner (`%LOCALAPPDATA%\Programs\WinCleaner`) liegt
 
 ## Das Wichtigste zuerst: Nichts passiert ohne dein Okay
 
-WinCleaner ist absichtlich vorsichtig gebaut:
+KernClean ist absichtlich vorsichtig gebaut:
 
 1. **Probelauf ist Standard.** Jeder Befehl, der etwas löscht oder ändert,
    zeigt zuerst nur an, *was* er tun würde. Erst mit `--no-dry-run` passiert
-   es wirklich — und auch dann fragt WinCleaner noch einmal nach
+   es wirklich — und auch dann fragt KernClean noch einmal nach
    (überspringen mit `--yes`).
 2. **Gelöscht wird in den Papierkorb**, nicht endgültig. Du kannst alles
    zurückholen.
@@ -154,7 +154,7 @@ WinCleaner list-programs               # Alles Installierte auflisten
 WinCleaner uninstall "AlteApp" --no-dry-run
 ```
 
-WinCleaner erstellt vorher einen Wiederherstellungspunkt und bietet danach an,
+KernClean erstellt vorher einen Wiederherstellungspunkt und bietet danach an,
 Überbleibsel (Ordner, Registry-Reste) mit zu entfernen — nur nach separater
 Rückfrage.
 
@@ -187,7 +187,7 @@ Absichtlich: Vertippte Flags werden abgelehnt statt ignoriert, damit ein
 falsch geschriebenes `--no-dry-run` nicht unbemerkt untergeht.
 
 **Wo ist die grafische Oberfläche?**
-Es gibt bewusst keine. WinCleaner ist ein schlankes Terminal-Werkzeug —
+Es gibt bewusst keine. KernClean ist ein schlankes Terminal-Werkzeug —
 skriptbar, planbar, ohne Hintergrundprozesse.
 
 **Neu bauen nach Code-Änderungen:**

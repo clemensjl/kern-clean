@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="clr-namespace:WinCleaner.Gui.ViewModels"
         xmlns:views="clr-namespace:WinCleaner.Gui.Views"
-        Title="WinCleaner" Height="720" Width="1080"
+        Title="KernClean" Height="720" Width="1080"
         MinHeight="560" MinWidth="880"
         WindowStartupLocation="CenterScreen"
         UseLayoutRounding="True"
@@ -38,7 +38,7 @@
                         <TextBlock Text="&#xEA18;" FontFamily="{StaticResource FontIcon}"
                                    FontSize="18" Foreground="{DynamicResource Accent}"
                                    VerticalAlignment="Center" Margin="0,0,9,0" />
-                        <TextBlock Text="WinCleaner" FontFamily="{StaticResource FontDisplay}"
+                        <TextBlock Text="KernClean" FontFamily="{StaticResource FontDisplay}"
                                    FontSize="18" FontWeight="SemiBold"
                                    Foreground="{DynamicResource TextPrimary}" VerticalAlignment="Center" />
                     </StackPanel>

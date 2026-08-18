@@ -81,7 +81,7 @@ public sealed class MenuCommand : ICommand
     {
         Console.WriteLine();
         Console.WriteLine("┌───────────────────────────────────────────────┐");
-        Console.WriteLine($"│  WinCleaner {AppInfo.Version,-34}│");
+        Console.WriteLine($"│  KernClean {AppInfo.Version,-35}│");
         Console.WriteLine("└───────────────────────────────────────────────┘");
         foreach (var e in entries)
             Console.WriteLine($" {e.Key,2}) {e.Label}");

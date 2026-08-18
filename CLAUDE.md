@@ -1,6 +1,6 @@
-# WinCleaner
+# KernClean
 
-Windows-Cleaner (eigener CCleaner-Ersatz). C# / .NET 8 (`net8.0-windows`), drei Projekte in `WinCleaner.sln`: CLI (`WinCleaner\`), WPF-GUI (`WinCleaner.Gui\`, MVVM, ruft die CLI auf), xUnit-Tests (`WinCleaner.Tests\`).
+Windows-Cleaner (eigener CCleaner-Ersatz), Marke "KernClean" (Dachmarke "Kern"; Repo-Slug `kern-clean`). Technischer Unterbau (Projektordner, Assembly-/Exe-Namen, Namespaces) heißt weiterhin `WinCleaner` — siehe Hinweis unten. C# / .NET 8 (`net8.0-windows`), drei Projekte in `WinCleaner.sln`: CLI (`WinCleaner\`), WPF-GUI (`WinCleaner.Gui\`, MVVM, ruft die CLI auf), xUnit-Tests (`WinCleaner.Tests\`).
 
 **Dieses Verzeichnis ist der Projekt-Root** (Git-Repo, Solution). Sessions hier starten — nicht im äußeren `Projekte\WinCleaner\` (das enthält nur `dist\`-Kopien).
 
@@ -37,6 +37,23 @@ Clemens benutzt die **installierte** Version unter `%LOCALAPPDATA%\Programs\WinC
 ## Sicherheitsmodell (nicht aufweichen)
 
 Jedes destruktive Kommando ist **Dry-Run by default**; echt löschen nur mit `--no-dry-run` + Bestätigung (`--yes`). Löschen in Papierkorb, Registry-Tweaks reversibel (`TweakEngine`, JSON-Backup), Restore Point vor Systemänderungen. Nur `shred`/`wipe-free-space` sind irreversibel.
+
+## Branding (KernClean, Stand 2026-08-19)
+
+Sichtbarer Produktname ist **KernClean** (README, ANLEITUNG, `--version`/`help`-Banner,
+GUI-Fenstertitel/Logo, `<Product>` in beiden .csproj). Bewusst **nicht** umbenannt, weil
+es bestehende Installationen bricht: Exe-/Assembly-Namen (`WinCleaner.exe`,
+`WinCleanerGui.exe`), C#-Namespaces (`WinCleaner.*`), Projekt-/Solution-Dateien
+(`WinCleaner.sln`, `WinCleaner.csproj`, …), der `%LOCALAPPDATA%\Programs\WinCleaner`-
+Installationsordner, `%LOCALAPPDATA%\WinCleaner\{tweaks,hash-cache.json}`, die
+Scheduled-Task-Namen `WinCleaner Auto-Clean` / `WinCleaner Privacy-Reapply` /
+`WinCleaner Auto-Update`, die hosts-Marker `# === WinCleaner Telemetrie-Block ... ===`
+und die Desktop-Verknüpfungen (`WinCleaner.lnk`, `WinCleaner (Terminal).lnk`) auf Clemens'
+Rechner. CLI-Beispielzeilen in README/ANLEITUNG (`WinCleaner scan-junk` etc.) sind
+deshalb absichtlich unverändert geblieben — sie sind funktionale Syntax, kein
+Branding. Ein echter technischer Rename (Exe/Assembly/Namespace) ist ein separates,
+bewusst zu entscheidendes Vorhaben (bricht Task Scheduler + Shortcuts, braucht
+Migration/Reinstall).
 
 ## Gotchas
 

@@ -10,7 +10,7 @@ public sealed class VersionCommand : ICommand
 
     public int Execute(CommandContext ctx)
     {
-        Console.WriteLine($"WinCleaner {AppInfo.Version}");
+        Console.WriteLine($"KernClean {AppInfo.Version}");
         return 0;
     }
 }

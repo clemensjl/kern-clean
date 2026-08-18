@@ -9,7 +9,7 @@
         <Nullable>enable</Nullable>
 
         <!-- Release-Metadaten / Versionierung -->
-        <Product>WinCleaner</Product>
+        <Product>KernClean</Product>
         <Authors>Clemens Jele</Authors>
         <Version>2.1.0</Version>
         <AssemblyVersion>2.1.0.0</AssemblyVersion>
