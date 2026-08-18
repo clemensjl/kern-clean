@@ -25,7 +25,7 @@ Clemens benutzt die **installierte** Version unter `%LOCALAPPDATA%\Programs\WinC
 ## Version & Release
 
 - Versionsnummer steht **doppelt**: `WinCleaner\WinCleaner.csproj` UND `WinCleaner.Gui\WinCleaner.Gui.csproj` (je `<Version>`-Block) — immer beide bumpen, plus `CHANGELOG.md` (Keep a Changelog / SemVer).
-- Release = `v*`-Tag pushen → GitHub Actions (`.github\workflows\ci.yml`) baut, testet und erstellt das GitHub-Release mit Exe. Remote: `github.com/clemensjl/WinCleaner`, Branch `master`.
+- Release = `v*`-Tag pushen → GitHub Actions (`.github\workflows\ci.yml`) baut, testet und erstellt das GitHub-Release mit Exe. Remote: `github.com/clemensjl/kern-clean` (bis 2026-08-19: `WinCleaner`, per `gh repo rename` umbenannt), Branch `master`.
 
 ## Architektur-Konventionen
 
