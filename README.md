@@ -31,6 +31,15 @@ software updates, and more — without bundling, telemetry, or a resident servic
 - **No bloat** — no telemetry, no bundling, no background daemon, no
   "health-score" nags.
 
+## Install
+
+Download the self-contained single-file `WinCleaner.exe` (no .NET install needed)
+from the [latest release](https://github.com/clemensjl/kern-clean/releases/latest), or in PowerShell:
+
+```powershell
+Invoke-WebRequest https://github.com/clemensjl/kern-clean/releases/latest/download/WinCleaner.exe -OutFile WinCleaner.exe; .\WinCleaner.exe help
+```
+
 ## Build
 
 Requires the **.NET 8 SDK**.
@@ -166,3 +175,11 @@ WinCleaner/                 # main CLI project
 WinCleaner.Tests/          # xUnit tests
 docs/research/             # competitor analysis & feature gap roadmap
 ```
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md).
+
+## License
+
+MIT, see [LICENSE](LICENSE).
