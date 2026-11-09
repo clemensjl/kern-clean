@@ -1,0 +1,38 @@
+name: Bug report
+description: Something does not work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The exact command line (for example `WinCleaner find-duplicates D:\Photos`) or the GUI page and clicks.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: KernClean version
+      description: Output of `WinCleaner --version`.
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Windows version
+      placeholder: Windows 11 23H2
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Output
+      description: Paste the terminal output, ideally with `--json` where supported. Remove personal paths first.
+      render: shell
